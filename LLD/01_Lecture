@@ -1,0 +1,47 @@
+Lets say there is gurman she only knows dsa and works in a company ->> easyride
+now to think about making the application she start with algorithms she knows
+like for mapping the whole city he uses graphs(nodes+edges) and then from source to 
+destination she applies dijkstra's algo then to assign the rider she uses a priority queue.
+
+
+NOw what' missing is implementation 
+what she has ->>> algorithm
+what she is missing ->>>> Object/Entities, Relationship, Data Security, Notification, Payment Gateway integration,
+how to scale to millions of users
+
+now to create a basic architecture of this application 
+Gurman learns System Design and this is her approach now
+* objects/entities - user, rider, location, notification, payment
+* relationship - between objects/entities
+* data security - like the phone no. of the user and the rider etc.
+and so for the rest
+so when she thinks about all of this LLD then comes the implementation of the algorithms
+        LLD ---> DSA
+
+LLD ---> focuses on Scalability, Maintainability(integrating new features does'nt render the previous ones useless & easily debuggable), Reusability( just like the notifications and payment gateway these are application independent, these can be integrated in any application also your code should not be tightly coupled or tightly fixated with the application & also the Rider-mapping algorithm).
+
+now what is HLD?
+focuses on things like what will be our
+* tech stack
+* db (SQL/noSQL)
+* servers scale
+* cost optimization
+in system design interview related to hld you'll be writitng almost no code
+because you'll be creating the architectural design
+
+
+now things common between. 
+LLD HLD DSA -----> all three used to build an application
+ |   |
+ |   |
+ |   |
+ |   |
+ |   focuses on system architecture
+ |
+ |
+ focuses on code structure
+
+ whereas dsa is the tool LLD uses to solve the problem.
+
+If DSA is the brain of the application
+then LLD is the skeleton.
