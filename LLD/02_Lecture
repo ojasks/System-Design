@@ -1,0 +1,75 @@
+History of Programming:
+* Machine Llearning ----->> (0/1) --> not scalable, prone to error and tedious
+* Assembly level languages ----->> not scalable, prone to error, tightly coupled with hardware, tedious.
+* Procedural Programming -------->> functions, loops, blocks(if else, switch),had everything except OOP, the code was more like set of steps/instructions. example ---> C.
+* OOP -------->> Real World Modelling (model the real world problems by coding according to the real world)
+  Data Security
+  Scalable/Reusble
+  Real world has objects which interact, so we needed to bring these objects into our programming language
+  Objects:
+  |
+  |--> characteristics (to uniquely identify it)
+  |--> behaviours (the methods or activities it does)
+  suppose we have an object by the name of Car it has its certain characteristics and behaviours
+  now if we have to explain the car in terms of programming language 
+  we introduce a class car
+
+  Class Car{
+    ...
+  }
+
+  Car* myCar = new Car;
+
+* oops vs procedural language
+  now lets say we have an object car
+  and we have an Owner which is also an object and owns the car
+  now the car itself has some characteristics and behaviours and when we come to 
+  the owner we have the same methods and characteristics of a car but with its own additional methods and characteristics.
+  and now suppose
+  the owner own another car , in that case we will have to again define the same methods and characteristics of it
+  -------> so basically it cant model real world , not scalable and reusable
+
+PILLARS OF OOPS:
+ABSTRACTION: Owner driving a car does'nt need to know the working of the engine or the components inside
+basically u interact with them through a interface 
+another example tv and remote (remote is interface to interact with the Tv)
+the objects have hidden data, which they dont need to know and another object2 which wants to interact with object1
+does'nt need to know its whole data , it just needs to know its behaviour
+
+--> hides unecessary details and shows only what is necessary 
+virtual means we are only declaring and not defining
+aur isko define krne ki zimmedaari iski child class ki hogi
+jo bhi isko extend krega ya inherit krega
+
+high level programming languages are good example of abstraction:
+
+
+
+ENCAPSULATION:
+like a capsule
+we do encapsulation by the means of a class
+we encapsulate all the variables and methods into a single entity
+--> it also tells about data security (some data is important to be kept secured, so that no outer object can access/use it)
+
+class is a blueprint of object creation
+there should be some varibles which could not be accessed from outside 
+for this access modifiers are used:
+Public - anyone can access it from outside
+Private - can't be accessed from outside
+Protected - cant be used form outside but the child classes can use it 
+
+
+we make the varibales private and the methods public cause we obviously want the 
+object to access the methods
+
+now you cant directly assign the currentspeed varible a value of 500
+here u can use getters and setters
+these work on a variable to get or set their value
+
+as these varibles are private so these can't be touched to get or set their values we introduce
+getters and setters function which are public methods to access those varibles which are private
+here we wont be setting
+in setter function we have the control to set up validations in the function
+
+
+Abstraction where focuses on data hiding , Encapsulation focuses on data security.
